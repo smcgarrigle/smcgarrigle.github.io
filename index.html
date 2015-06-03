@@ -29,9 +29,22 @@
         <section id="main-content">
         <h1>The EditWired Bookmarklet</h1>
         <p>Until the edit link is restored beside the meta in posts, you can click this bookmarklet on any post on wired.com (if you're logged in) and it will open a new tab with that post in edit mode.</p>
-        <p>Drag and drop this link to your bookmark toolbar -> <a href="javascript:void%20function(){(function(){var%20o=document.querySelector(%22body%22).getAttribute(%22class%22),t=/postid-(\d+)/,i=t.exec(o)[1],n=%22/wp-admin/post.php%3Fpost=%22+i+%22%26action=edit%22,c=window.location.protocol+%22//%22+window.location.host+n;window.open(c)})()}();">EditWired</a></p>
-          </section>
 
+<!--        <p>Drag and drop this link to your bookmark toolbar -> <a href="javascript:void%20function(){(function(){var%20o=document.querySelector(%22body%22).getAttribute(%22class%22),t=/postid-(\d+)/,i=t.exec(o)[1],n=%22/wp-admin/post.php%3Fpost=%22+i+%22%26action=edit%22,c=window.location.protocol+%22//%22+window.location.host+n;window.open(c)})()}();"><span class=".wrap">EditWired</span></a></p>
+-->
+        <div class="wrap">
+  <button class="tip">
+    <a href="javascript:void%20function(){(function(){var%20o=document.querySelector(%22body%22).getAttribute(%22class%22),t=/postid-(\d+)/,i=t.exec(o)[1],n=%22/wp-admin/post.php%3Fpost=%22+i+%22%26action=edit%22,c=window.location.protocol+%22//%22+window.location.host+n;window.open(c)})()}();">WIRED Edit Bookmarklet</a>
+    <!-- change the class on the span below between 'top', 'right', 'bottom', 'left' -->
+    <span class="left">Drag and drop me to your bookmark toolbar<span class="nub"></span>
+    </span>
+
+  </button>
+</div>
+<!--
+        <img src="images/bookmarklet.gif">
+-->
+          </section>
         <aside id="sidebar">
         </aside>
       </div>
