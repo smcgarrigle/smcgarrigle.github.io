@@ -23,7 +23,8 @@
             n = "https://copilot.aws.conde.io/wrd/bundles/" + c;
                 console.log("homepage:" + n);
                             window.open(n);
-                } else n = "https://copilot.aws.conde.io/wrd/articles/" + o,
+                } else var c = document.querySelector("meta[name='id']").getAttribute("content");
+                n = "https://copilot.aws.conde.io/wrd/articles/" + c,
                             window.open(n);
                console.log("************************");
                console.log("meta:" + c + "url:" + o);
