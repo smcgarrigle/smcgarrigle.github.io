@@ -6,7 +6,7 @@
     if ((secondLevelLocation.length === 24 )) {
     n = "https://copilot.aws.conde.io/wrd/articles/" + o;
             window.open(n);
-        } else if (pathOne.length === 6 ) {
+        } else if (pathOne.length === 6 && document.querySelector("meta[property='og:type']").getAttribute("content") != "review" || '') {
         var c = document.querySelector("meta[name='id']").getAttribute("content");
         n = "https://copilot.aws.conde.io/wrd/contributors/" + c;
             window.open(n);
